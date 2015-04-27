@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+Rewriterule ^EditarClientes-([0-9]+)\.html clientes_editar.php?id=$1        
+Rewriterule ^EditarMedios-([0-9]+)\.html medios_editar.php?id=$1        
+Rewriterule ^EditarPeriodista-([0-9]+)\.html periodistas_editar.php?id=$1        
+Rewriterule ^EditarActividad-([0-9]+)\.html actividades_editar.php?id=$1     
+Rewriterule ^EditarTema-([0-9]+)\.html temas_interes_editar.php?id=$1    
+Rewriterule ^EditarSeccion-([0-9]+)\.html 	secciones_editar.php?id=$1    
+Rewriterule ^EditarCargos-([0-9]+)\.html 	cargos_editar.php?id=$1
+Rewriterule ^EditarCiudad-([0-9]+)\.html 	ciudades_editar.php?id=$1    
+Rewriterule ^EditarUsuario-([0-9]+)\.html 	usuarios_editar.php?id=$1    
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+
+Header set Cache-Control "max-age=2592000"
+
+</FilesMatch>
+
+
+
