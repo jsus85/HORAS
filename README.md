@@ -1,0 +1,2 @@
+# PACIFIC
+aplicacion de periodistas
